@@ -6,7 +6,7 @@ import DatasetList from './components/DatasetList';
 import DataVisualization from './components/DataVisualization';
 
 // Configure axios with basic auth
-const API_BASE_URL = 'http://localhost:8000/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/api';
 const username = 'admin';
 const password = 'admin123';
 
